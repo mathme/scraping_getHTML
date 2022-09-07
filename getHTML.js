@@ -28,8 +28,8 @@ const asyncLineReader = async (iterater) => {
           });
         const $ = await cheerio.load(response.data);
         const id = lineText[0];
-        let targetdiv;
-        console.log(response.status);
+        let targetelm;
+        //console.log(response.status);
         if (response.status === 200){
           //取得したい要素の指定と末尾に追加記述（あれば）
           targetelm = $('.target_class').html();
