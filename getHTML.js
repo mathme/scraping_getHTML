@@ -34,7 +34,7 @@ const asyncLineReader = async (iterater) => {
           //取得したい要素の指定と末尾に追加記述（あれば）
           targetelm = $('.target_class').html();
         }
-        if (targetdiv) {
+        if (targetelm) {
           let filename = id + ".txt";
           //IDごとに別ファイルで出力
           fs.writeFileSync(filename,targetelm);
